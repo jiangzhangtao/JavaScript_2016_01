@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        li {
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: yellow;
+            color: red;
+            font-size: 18px;
+            margin-bottom: 10px;
+
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>我是索引0</li>
+    <li>我是索引1</li>
+    <li>我是索引2</li>
+    <li>我是索引3</li>
+    <li>我是索引4</li>
+    <li>我是索引5</li>
+</ul>
+</body>
+</html>
+<script>
+    //    var oLis = document.getElementsByTagName("li");
+    //    var fn1 = ( function () {
+    //        for (var i = 0; i < oLis.length; i++) {
+    //            oLis[i].index = i;
+    //            oLis[i].onclick = function () {
+    //                alert(this.index);
+    //            }
+    //        }
+    //    });
+    //    fn1();
+    var oLis = document.getElementsByTagName("li");
+    function fn() {
+        ( function () {
+                    for (var i = 0; i < oLis.length; i++) {
+                        oLis[i].index = i;
+                        oLis[i].onclick = function () {
+                            alert(this.index);
+                        }
+                    }
+                }()
+        );
+    }
+
+
+    fn();
+</script>

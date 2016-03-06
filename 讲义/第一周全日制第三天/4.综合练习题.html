@@ -9,7 +9,7 @@
     var number = 2;
     var obj = {
         number: 4,
-        fn1: (function  () {
+        fn1: (function () {
             this.number *= 2;//window.number = 4
             number = number * 2;
             var number = 3;
@@ -27,11 +27,11 @@
     alert(window.number);//8
     alert(obj.number);//8
 
-//    console.log(sum);
-//    ~(function sum(){
-//        console.log(num);
-//        var num = 10;
-//    })()
+    //    console.log(sum);
+    //    ~(function sum(){
+    //        console.log(num);
+    //        var num = 10;
+    //    })()
 </script>
 </body>
 </html>
